@@ -6,6 +6,11 @@
     font-family: Roboto;
 }
 
+button {
+    position: fixed;
+    top: 0px;
+}
+
 body{
     background: #222831;
     font-size: 14px;
