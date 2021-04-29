@@ -162,7 +162,7 @@ figcaption {
 /* FOOTER */
 .footer{
 	padding-top: 100px;
-    padding-left: 250px;
+    padding: 0 auto;
 	font-family: "Roboto", sans-serif;
 	color: #222831; 
 }
@@ -192,7 +192,5 @@ figcaption {
 .socials a:hover i{
 	color: #f05454;
 }
-
-
 
 /* END--FOOTER */
