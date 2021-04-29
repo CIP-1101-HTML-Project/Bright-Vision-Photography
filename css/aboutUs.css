@@ -161,6 +161,7 @@ figcaption {
 
 /* FOOTER */
 .footer{
+    margin-left: 250px;
 	padding-top: 100px;
     padding: 0 auto;
 	font-family: "Roboto", sans-serif;
