@@ -1,0 +1,197 @@
+/* Color
+#222831 dark blue
+#dddddd gray
+#f05454 red
+
+*/
+/* HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 19px;
+}
+
+/* END -- HTML*/
+
+/* SIDEBAR */
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background: #dddddd;
+}
+
+.logo{
+    display: block;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+nav ul{
+    background: #dddddd;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li{
+    line-height: 50px;
+}
+
+nav ul li a{
+    position: relative;
+    color:#222831;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color:#f05454;
+}
+
+nav ul ul{
+    position: static;
+    display: none;
+}
+
+nav ul .port-show.show{
+    display: block;
+}
+
+nav ul .tutor-show.show1{
+    display: block;
+}
+
+nav ul ul li {
+    line-height: 42px;
+}
+
+nav ul ul li a{
+    font-size: 17px;
+    padding-left: 80px;
+}
+
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+nav ul li a span.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+/* END--SIDEBAR */
+
+/* CONTENT */
+.content{
+    margin-left: 250px;
+    padding: 5px;
+}
+.group-section{
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+}
+.group-section h1{
+    margin-top: 60px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+.border{
+    display: block;
+    margin:auto;
+    width: 160px;
+    height: 3px;
+    background-color: #f05454;
+    margin-bottom: 40px;
+}
+.ps{
+    margin-bottom: 40px;
+}
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.ps img{
+    width: 100%;
+    filter: grayscale(75%);
+    transition: 0.4s all
+}
+
+.ps a:hover > img{
+    filter:none;
+}
+.company img{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 0;
+}
+.company p{
+    text-align: justify;
+    padding-bottom: 45px;
+}
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+figcaption {
+    margin: 20px 0;
+}
+
+/* END--CONTENT */
+
+/* FOOTER */
+.footer{
+    margin-left: 250px;
+	padding-top: 100px;
+    padding: 0 auto;
+	font-family: "Roboto", sans-serif;
+	color: #222831; 
+}
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+	margin: 0 10px;
+}
+
+.socials a{
+	text-decoration: none;
+	color: #222831;
+}
+
+.socials a i{
+	font-size: 1.1rem;
+	transition: color .4 ease;
+}
+
+.socials a:hover i{
+	color: #f05454;
+}
+
+/* END--FOOTER */
