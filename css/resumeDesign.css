@@ -219,8 +219,6 @@ body{
 }
 
 button{
-    position: fixed;
-    top: 0;
     margin-left: 350px;
     padding: 15px;
     background-color: rgba(244, 84, 84, 1);
