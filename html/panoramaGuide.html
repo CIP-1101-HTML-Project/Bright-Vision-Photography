@@ -1,0 +1,136 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="../css/contentDesign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>BVP - Panorama Guide</title>
+    <style>
+        img.panorama {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!--Group Project-->
+    <!--Side bar-->
+    <nav class="sidebar">
+        <a href="../index.html"><img class="logo" src="../images/bright vision logo.png"></a>
+        <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a class="tutor-btn">Tutorial
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="tutor-show">
+                    <li><a href="content.html">Photography Basics</a></li>
+                    <li><a href="posing1.html">Basic Posing Guides </a></li>
+                    <li><a href="composition.html">Composition</a></li>
+                    <li><a href="panorama.html">Panorama</a></li>
+                    <li><a href="gear1.html">Basic Gears </a></li>
+                    <li><a href="equipment1.html">Equipments</a></li>
+                    <li><a href="themes1.html">Themes</a></li>
+                    <li><a href="software.html">Photography Software</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="port-btn">Portfolio
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="port-show">
+                    <li><a href="portrait.html">Portrait</a></li>
+                    <li><a href="street.html">Street</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+   <!--Content-->
+    <div class="content">
+        <div>
+            <h1>Panoramic Photography | Guide</h1>
+            <img src="../images/panorama4.jpg"/>
+            <blockquote>
+                <h2>#1 Shoot in Manual Mode</h2>
+                <p>
+                    Since a panorama is shot over a large field of view where lighting conditions can be different, it is imperative to shoot in Manual mode with Manual Focus. This will ensure all the photographs shot have an exact exposure value and focus throughout all the images. Shooting in Automatic, Program or Semi-Automatic modes (like Shutter priority or Aperture priority) will result in different exposure values for each photograph, which in turn may cause the final merged photograph to have varied exposure and color casts in different parts of the photograph.
+                </p>
+            </blockquote>
+            <blockquote>
+                <h2>#2 RAW or JPEG?</h2>
+                <p>
+                    While you generally want to shoot in RAW, it is preferable to switch to JPEG for panoramas. Shooting in RAW is absolutely fine, but since the photographs will not be edited individually (we will see this at a later stage) and to reduce shutter lag, shooting in JPEG is preferred. A word of caution – as we will be shooting in JPEG make sure the exposure values are correctly adjusted.
+                </p>
+            </blockquote>
+            <blockquote>
+                <h2>#3 Tripod or handheld?</h2>
+                <p>
+                    If the weight of your tripod is not a factor, carrying it is always preferable. However on a bright day you can very well rely on your own hands. A steady posture, or using your camera bag or any sturdy object available to rest the camera on, will save you the weight of carrying a tripod.
+                </p>
+            </blockquote>
+            <blockquote>
+                <h2>#4 Horizontal or vertical?</h2>
+                <p>
+                    We are generally accustomed to shoot in Landscape (horizontal) mode. Shooting in Landscape is fine but the resulting panorama will be short in height, since Landscape photographs will be stitched together. Additionally, during the stitching process there will be a lot of redundant or blank areas (you will see later during the post-processing) which need to be cropped out. This will further reduce the height of the panorama. To overcome this issue you may choose to shoot the panorama in Portrait (Vertical) mode. This will help in achieving a greater image height which can be cropped out as per requirement, say for printing or aesthetics.
+                </p>
+            </blockquote>
+            <blockquote>
+                <h2>#5 Be fast</h2>
+                <p>
+                    Be very quick in shooting since light conditions change fast. Additionally if you are shooting a cityscape, a populated beach or a scenario where there is movement, be cautious. If you are not shooting fast enough, you will find moving objects (e.g., people, cars, bikes) will be duplicated across the frames. You would not want to see the same object twice across the panorama.
+                </p>
+            </blockquote>
+            <blockquote>
+                <h2>#6 Plan it out well</h2>
+                <p>
+                    Stand at the selected spot and plan the number of shots in advance. This will help you in keeping a control of the number of shots rather than shooting randomly. Be sure to do a mock round without actually shooting. <br><br>
+
+                    When you are ready, start shooting from left to right. Make sure you have at least 20% overlapping areas in two consecutive photographs. An visual estimate will suffice. Look through your viewfinder and shoot. Do not look at the individual photographs on your LCD screen until you finish shooting. Before leaving the scene turn on the LCD screen and review the photograph series. If you are not happy, shoot again.
+                </p>
+            </blockquote>
+        </div>
+
+        <div class="pignation">
+            <ul>
+                <li class="prev"><a href="panorama.html">< Prev</a></li>
+                <li class="pageNumber"><a href="panorama.html" >1</a></li>
+                <li class="pageNumber active"><a href="#top">2</a></li>
+                <li class="pageNumber"><a href="panoramaStitching.html">3</a></li>
+                <li class="Next"><a href="panoramaStitching.html">Next ></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(".port-btn").click(function(){
+            $("nav ul .port-show").toggleClass("show");
+            $("nav ul .first").toggleClass("rotate");
+        });
+        $(".tutor-btn").click(function(){
+            $("nav ul .tutor-show").toggleClass("show1");
+            $("nav ul .second").toggleClass("rotate");
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pignation').find('.pageNumber.active').next().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').prev().
+                    removeClass('active')
+            })
+            $('.prev').click(function(){
+                $('.pignation').find('.pageNumber.active').prev().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').next().
+                    removeClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

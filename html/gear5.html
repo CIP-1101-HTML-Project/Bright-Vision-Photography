@@ -1,0 +1,131 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Bright Vision Photography</title>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   
+</head>
+
+<body>
+    <!--Group Project-->
+    <!--Side bar-->
+    <nav class="sidebar">
+        <a href="../index.html"><img class="logo" src="../images/bright vision logo.png"></a>
+        <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a class="tutor-btn">Tutorial
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="tutor-show">
+                    <li><a href="content.html">Photography Basics</a></li>
+                    <li><a href="posing1.html">Basic Posing Guides </a></li>
+                    <li><a href="composition.html">Composition</a></li>
+                    <li><a href="panorama.html">Panorama</a></li>
+                    <li><a href="gear1.html">Basic Gears </a></li>
+                    <li><a href="equipment1.html">Equipments</a></li>
+                    <li><a href="themes1.html">Themes</a></li>
+                    <li><a href="software.html">Photography Software</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="port-btn">Portfolio
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="port-show">
+                    <li><a href="portrait.html">Portrait</a></li>
+                    <li><a href="street.html">Street</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+   <!--Content-->
+    <div class="content">
+       <h1>Basic Gears in Photography </h1>
+       <h2>Other Gears</h2>
+	   
+       <blockquote><p>Gear is and always has been a limiting factor that places a ceiling on the 
+		abilities of what a photographer can achieve. The better your gear, the higher that ceiling.</p></blockquote>
+        <br>
+		<br>
+        <img src="../images/gears/camerabag.jpg" alt="camera bag" style="width: 50%;display: block; margin: 15px auto;">
+        <h3 class="header" style="text-align: center;">Camera Bag</h3>
+        <blockquote><p>As a working photographer, the center of the universe is your camera bag and its contents. 
+		Camera bag gives you protection. The protection of your expensive gear comes first when you travel. 
+		A camera bag must not only look good and fit nicely around your shoulders, 
+		but it should also give easy access to the camera and protect it. </p></blockquote>
+		<br>
+		<br>
+		<br>
+		
+		<img src="../images/gears/lightmeter.jpg" alt="light meter" style="width: 50%;display: block; margin: 15px auto;">
+        <h3 class="header" style="text-align: center;">Light Meters </h3>
+        <blockquote><p>For ambient light readings, the meter in your camera can be quite sufficient. 
+		Flash metering is another story, especially if you are using flash to fill backlit subjects or 
+		darken background areas to place more emphasis on the subjects in the foreground. 
+		You can always shoot test exposures and review them on your camera’s LCD,
+		but a more professional and certainly more precise method of establishing accurate flash exposures
+		is by using a light meter.</p></blockquote>
+		<br>
+		<br>
+		<br>
+		
+		<img src="../images/gears/lensAdapter.jpg" alt="lens adapter" style="width: 50%;display: block; margin: 15px auto;">
+        <h3 class="header" style="text-align: center;"> Lens Adapter </h3>
+        <blockquote><p>A lens adapter is a device that enables the use of camera and 
+		lens combinations from otherwise incompatible systems. The most simple lens adapter designs, 
+		passive lens adapters provide a secure physical connection between the camera and the lens.</p></blockquote>
+		
+		
+
+         <div class="pignation">
+           <ul>
+               <li class="prev"><a href="gear4.html" >< Prev </a></li>
+               <li class="pageNumber "><a href="gear1.html" >1</a></li>
+               <li class="pageNumber"><a href="gear2.html" >2</a></li>
+               <li class="pageNumber"><a href="gear3.html" >3</a></li>
+               <li class="pageNumber"><a href="gear4.html" >4</a></li>
+               <li class="pageNumber active"><a href="gear5.html" >5</a></li>
+               <li class="Next"></li>
+           </ul>
+       </div>
+
+    </div>
+    <script>
+        $(".port-btn").click(function(){
+            $("nav ul .port-show").toggleClass("show");
+            $("nav ul .first").toggleClass("rotate");
+        });
+        $(".tutor-btn").click(function(){
+            $("nav ul .tutor-show").toggleClass("show1");
+            $("nav ul .second").toggleClass("rotate");
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pignation').find('.pageNumber.active').next().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').prev().
+                    removeClass('active')
+            })
+            $('.prev').click(function(){
+                $('.pignation').find('.pageNumber.active').prev().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').next().
+                    removeClass('active')
+            })
+        })
+    </script>
+
+</body>
+
+</html>

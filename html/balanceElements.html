@@ -1,0 +1,114 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="../css/contentDesign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>BVP - Balance Elements</title>
+    <style>
+    </style>
+</head>
+
+<body id="top">
+    <!--Group Project-->
+    <!--Side bar-->
+    <nav class="sidebar">
+        <a href="../index.html"><img class="logo" src="../images/bright vision logo.png"></a>
+        <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a class="tutor-btn">Tutorial
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="tutor-show">
+                    <li><a href="content.html">Photography Basics</a></li>
+                    <li><a href="posing1.html">Basic Posing Guides </a></li>
+                    <li><a href="composition.html">Composition</a></li>
+                    <li><a href="panorama.html">Panorama</a></li>
+                    <li><a href="gear1.html">Basic Gears </a></li>
+                    <li><a href="equipment1.html">Equipments</a></li>
+                    <li><a href="themes1.html">Themes</a></li>
+                    <li><a href="software.html">Photography Software</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="port-btn">Portfolio
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="port-show">
+                    <li><a href="portrait.html">Portrait</a></li>
+                    <li><a href="street.html">Street</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+   <!--Content-->
+    <div class="content">
+        <div>
+            <h1>Composition | Balance Elements</h1>
+            <img src="../images/balanceElements1.jpg"/>
+            <blockquote>
+                <p>
+                    The first compositional guideline we looked at was the ‘rule of thirds’. This of course means that we often place the main subject of the photo to the side of the frame along one of the vertical grid lines. Sometimes this can lead to a lack of balance in the scene. It can leave a sort of ‘void’ in the rest of the frame. <br><br>
+
+                    To overcome this, you can compose your shot to include a secondary subject of lesser importance or size on the other side of the frame. This balances out the composition without taking too much focus off the main subject of the photograph.
+                </p>
+            </blockquote>
+            <img src="../images/balanceElements2.jpg"/>
+            </blockquote>
+            <blockquote>
+                <p>
+                    You can achieve a balanced composition and even out the main subject's "visual weight" by including another object of lesser importance to fill the space. The lamppost itself fills the left side of the frame. The Eiffel Tower in the distance counter balances this on the other side of the frame.
+                </p>
+            </blockquote>
+        </div>
+
+        <div class="pignation">
+            <ul>
+                <li class="prev"><a href="leadingLines.html">< Prev</a></li>
+                <li class="pageNumber"><a href="composition.html">1</a></li>
+                <li class="pageNumber"><a href="ruleOfThirds.html">2</a></li>
+                <li class="pageNumber"><a href="symmetry.html">3</a></li>
+                <li class="pageNumber"><a href="leadingLines.html">4</a></li>
+                <li class="pageNumber active"><a href="#top">5</a></li>
+                <li class="pageNumber"><a href="cropping.html">6</a></li>
+                <li class="pageNumber"><a href="depth.html">7</a></li>
+                <li class="pageNumber"><a href="framing.html">8</a></li>
+                <li class="Next"><a href="cropping.html">Next ></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(".port-btn").click(function(){
+            $("nav ul .port-show").toggleClass("show");
+            $("nav ul .first").toggleClass("rotate");
+        });
+        $(".tutor-btn").click(function(){
+            $("nav ul .tutor-show").toggleClass("show1");
+            $("nav ul .second").toggleClass("rotate");
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pignation').find('.pageNumber.active').next().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').prev().
+                    removeClass('active')
+            })
+            $('.prev').click(function(){
+                $('.pignation').find('.pageNumber.active').prev().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').next().
+                    removeClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

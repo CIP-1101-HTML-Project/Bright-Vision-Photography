@@ -1,0 +1,118 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="../css/contentDesign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>BVP - Framing</title>
+    <style>
+    </style>
+</head>
+
+<body id="top">
+    <!--Group Project-->
+    <!--Side bar-->
+    <nav class="sidebar">
+        <a href="../index.html"><img class="logo" src="../images/bright vision logo.png"></a>
+        <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a class="tutor-btn">Tutorial
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="tutor-show">
+                    <li><a href="content.html">Photography Basics</a></li>
+                    <li><a href="posing1.html">Basic Posing Guides </a></li>
+                    <li><a href="composition.html">Composition</a></li>
+                    <li><a href="panorama.html">Panorama</a></li>
+                    <li><a href="gear1.html">Basic Gears </a></li>
+                    <li><a href="equipment1.html">Equipments</a></li>
+                    <li><a href="themes1.html">Themes</a></li>
+                    <li><a href="software.html">Photography Software</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="port-btn">Portfolio
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="port-show">
+                    <li><a href="portrait.html">Portrait</a></li>
+                    <li><a href="street.html">Street</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+   <!--Content-->
+    <div class="content">
+        <div>
+            <h1>Composition | Framing</h1>
+            <img src="../images/framing1.jpg"/>
+            <blockquote>
+                <p>
+                    The world is full of objects which make perfect natural frames, such as trees, archways and holes. By placing these around the edge of the composition you help to isolate the main subject from the outside world. The result is a more focused image which draws your eye naturally to the main point of interest.
+                </p>
+            </blockquote>
+            <img class="portrait" src="../images/framing2.jpg"/>
+            </blockquote>
+            <blockquote>
+                <p>
+                    Frames don’t have to be man-made objects such as arches or windows. The photo below was taken in County Kildare in Ireland. This time, I used the tree trunk to the right and the overhanging branch to create a frame around the scene containing the bridge and boat house. Notice that even though the ‘frame’ doesn’t actually surround the whole scene in this case, it still adds a sense of depth.
+                </p>
+            </blockquote>
+            <img src="../images/framing3.jpg"/>
+            <blockquote>
+                <p>
+                    Including a ‘frame withing the frame’ is another effective way of portraying depth in a scene. Look for elements such as windows, arches or overhanging branches to frame the scene with. The ‘frame’ does not necessarily have to surround the entire scene to be effective. Using a ‘frame within a frame’ presents a great opportunity to use your surroundings to be creative in your compositions.
+                </p>
+            </blockquote>
+        </div>
+
+        <div class="pignation">
+            <ul>
+                <li class="prev"><a href="depth.html">< Prev</a></li>
+                <li class="pageNumber"><a href="composition.html">1</a></li>
+                <li class="pageNumber"><a href="ruleOfThirds.html">2</a></li>
+                <li class="pageNumber"><a href="symmetry.html">3</a></li>
+                <li class="pageNumber"><a href="leadingLines.html">4</a></li>
+                <li class="pageNumber"><a href="balanceElements.html">5</a></li>
+                <li class="pageNumber"><a href="cropping.html">6</a></li>
+                <li class="pageNumber"><a href="depth.html">7</a></li>
+                <li class="pageNumber active"><a href="#top">8</a></li>
+                <li class="Next"></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(".port-btn").click(function(){
+            $("nav ul .port-show").toggleClass("show");
+            $("nav ul .first").toggleClass("rotate");
+        });
+        $(".tutor-btn").click(function(){
+            $("nav ul .tutor-show").toggleClass("show1");
+            $("nav ul .second").toggleClass("rotate");
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pignation').find('.pageNumber.active').next().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').prev().
+                    removeClass('active')
+            })
+            $('.prev').click(function(){
+                $('.pignation').find('.pageNumber.active').prev().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').next().
+                    removeClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

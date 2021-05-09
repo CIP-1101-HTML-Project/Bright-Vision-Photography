@@ -1,0 +1,118 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ <title>Bright Vision Photography</title>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   
+</head>
+
+<body>
+    <!--Group Project-->
+    <!--Side bar-->
+    <nav class="sidebar">
+        <a href="../index.html"><img class="logo" src="../images/bright vision logo.png"></a>
+        <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a class="tutor-btn">Tutorial
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="tutor-show">
+                    <li><a href="content.html">Photography Basics</a></li>
+                    <li><a href="posing1.html">Basic Posing Guides </a></li>
+                    <li><a href="composition.html">Composition</a></li>
+                    <li><a href="panorama.html">Panorama</a></li>
+                    <li><a href="gear1.html">Basic Gears </a></li>
+                    <li><a href="equipment1.html">Equipments</a></li>
+                    <li><a href="themes1.html">Themes</a></li>
+                    <li><a href="software.html">Photography Software</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="port-btn">Portfolio
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="port-show">
+                    <li><a href="portrait.html">Portrait</a></li>
+                    <li><a href="street.html">Street</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+   <!--Content-->
+    <div class="content">
+
+       <h1>Equipment | Equipments use on set</h1>
+       <h2>Camera</h2>
+       <blockquote><p>The first piece of equipment you need to start a photography business is a good camera. There are plenty of options out there to consider. Some work better in certain situations than others, so you’ll want to do a lot of research on what models will work best for your particular niche.
+	   Why would you pick DSLR vs Point and Shoot Camera or vice-versa? As DSLRs are becoming more and more affordable, a lot of people are wondering if it is time for them to switch to a DSLR and toss their point and shoot cameras. Nowadays, point and shoot cameras have a long list of features and capabilities, compared to even slightly older versions. GPS, face-detection, smile detection and many other new technologies are making their way into the point and shoot market, over-saturating it with new cameras and making it more difficult for people to choose the right camera for their needs. A similar thing is also happening in the DSLR world, where manufacturers are dividing the market into multiple segments, trying to capture a range of potential customers: from entry-level to advanced professional. But one thing for sure – there are many people, who are stuck in the middle, trying to decide whether they want to stay with their point and shoots, or bite the bullet and switch to a DSLR.
+        </p></blockquote>
+        <br>
+        <img src="../images/1.jpg" style="width: 50%;display: block; margin: 15px auto;">
+        
+		<br>
+		
+		 <h1>Equipment | Equipments use on set </h1>
+       <h2>Tripod</h2>
+       <blockquote><p> A tripod is also an essential piece of equipment, since it can help you keep your camera steady and allow you to take many pictures of each subject without moving the camera around.
+	   A tripod has three legs and is used to hold something in position and keep it steady. Tripods come in different sizes which should be considered in relation to the weight of the object to be held. If the tripod is too small, it will not hold and support a camera adequately, for example. The main features are legs, a head and plate. The head allows you to move the object while the plate is where the object is mounted. The legs then distribute the weight evenly among them to balance the object.</p></blockquote>
+        <br>
+        <img src="../images/2.jpg" style="width: 50%;display: block; margin: 15px auto;">
+        
+		
+		
+		
+		
+
+     
+       <div class="pignation">
+           <ul>
+               <li class="prev"></li>
+               <li class="pageNumber active"><a href="equipment1.html" >1</a></li>
+               <li class="pageNumber"><a href="equipment2.html" >2</a></li>
+               <li class="pageNumber"><a href="equipment3.html" >3</a></li>
+               <li class="pageNumber"><a href="equipment4.html" >4</a></li>
+               <li class="pageNumber"><a href="equipment5.html" >5</a></li>
+               <li class="Next"><a href="equipment2.html" >Next ></a></li>
+           </ul>
+       </div>
+
+    </div>
+    <script>
+        $(".port-btn").click(function(){
+            $("nav ul .port-show").toggleClass("show");
+            $("nav ul .first").toggleClass("rotate");
+        });
+        $(".tutor-btn").click(function(){
+            $("nav ul .tutor-show").toggleClass("show1");
+            $("nav ul .second").toggleClass("rotate");
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pignation').find('.pageNumber.active').next().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').prev().
+                    removeClass('active')
+            })
+            $('.prev').click(function(){
+                $('.pignation').find('.pageNumber.active').prev().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').next().
+                    removeClass('active')
+            })
+        })
+    </script>
+
+</body>
+
+</html>

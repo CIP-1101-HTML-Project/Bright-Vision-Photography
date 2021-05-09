@@ -1,0 +1,115 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="../css/contentDesign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>BVP - Panorama</title>
+    <style>
+        img.panorama {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!--Group Project-->
+    <!--Side bar-->
+    <nav class="sidebar">
+        <a href="../index.html"><img class="logo" src="../images/bright vision logo.png"></a>
+        <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a class="tutor-btn">Tutorial
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="tutor-show">
+                    <li><a href="content.html">Photography Basics</a></li>
+                    <li><a href="posing1.html">Basic Posing Guides </a></li>
+                    <li><a href="composition.html">Composition</a></li>
+                    <li><a href="panorama.html">Panorama</a></li>
+                    <li><a href="gear1.html">Basic Gears </a></li>
+                    <li><a href="equipment1.html">Equipments</a></li>
+                    <li><a href="themes1.html">Themes</a></li>
+                    <li><a href="software.html">Photography Software</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="port-btn">Portfolio
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="port-show">
+                    <li><a href="portrait.html">Portrait</a></li>
+                    <li><a href="street.html">Street</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+   <!--Content-->
+    <div class="content">
+        <div>
+            <h1>Panoramic Photography</h1>
+            <img class="panorama" src="../images/panorama1.jpg"/>
+            <blockquote>
+                <p>
+                    Panoramic photography, also known as wide format photography, is a special technique that stitches multiple images from the same camera together to form a single, wide photograph (vertical or horizontal). The term “panorama” literally means “all sight” in Greek and it first originated from painters that wanted to capture a wide view of a landscape, not just a certain part of it. <br><br>
+                    
+                    The first panoramic photographs were made by simply aligning printed versions of film, which did not turn out very well, because it was close to impossible to perfectly align photographs. With the invention of personal computing, advancements in computer software and digital photography, it is now much easier to stitch digital images together using specialized software. In fact, using a proper photography technique and panoramic equipment, it is now possible to create near-perfect panoramas at extremely high resolutions. Some photographers even stitch hundreds of high resolution images to create gargantuan “gigapixel” panoramas. <br><br>
+                    
+                    Today, digital panoramic photography is quite popular and common not only among landscape photographers, but also among architectural and cityscape photographers.
+                </p>  
+            </blockquote>
+            <img class="panorama" src="../images/panorama2.jpg"/>
+            <blockquote>
+                <p>
+                    A panorama is a combined set of individual photographs, in which two adjacent photographs have at least 20% overlapping areas. These two, or more, overlapping photographs are “stitched” with the help of software to produce extremely elongated fields of view. The overlapping is required as the software is able to understand the common areas in two adjacent photographs and hence can eliminate duplication of a scene by stitching the same into a single photograph. <br><br>
+
+                    Panoramic Photography can get quite complex and expensive, depending on what you are trying to do. For example, creating panoramic images in architectural photography requires camera and lens to be properly calibrated on special panoramic equipment to prevent curved lines, distortions and improper stitches of close objects. At the same time, you can successfully take great landscape panoramic images without investing on any camera equipment, as long as you know how to do it right.
+                </p>  
+            </blockquote>
+        </div>
+
+        <div class="pignation">
+            <ul>
+                <li class="prev"></li>
+                <li class="pageNumber active"><a href="#top" >1</a></li>
+                <li class="pageNumber"><a href="panoramaGuide.html">2</a></li>
+                <li class="pageNumber"><a href="panoramaStitching.html">3</a></li>
+                <li class="Next"><a href="panoramaGuide.html">Next ></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(".port-btn").click(function(){
+            $("nav ul .port-show").toggleClass("show");
+            $("nav ul .first").toggleClass("rotate");
+        });
+        $(".tutor-btn").click(function(){
+            $("nav ul .tutor-show").toggleClass("show1");
+            $("nav ul .second").toggleClass("rotate");
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pignation').find('.pageNumber.active').next().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').prev().
+                    removeClass('active')
+            })
+            $('.prev').click(function(){
+                $('.pignation').find('.pageNumber.active').prev().
+                    addClass('active')
+                    $('.pignation').find('.pageNumber.active').next().
+                    removeClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

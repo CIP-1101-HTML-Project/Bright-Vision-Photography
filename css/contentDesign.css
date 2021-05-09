@@ -1,0 +1,205 @@
+/* Color
+#222831 dark blue
+#dddddd gray
+#f05454 red
+
+*/
+/* HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 19px;
+}
+
+/* END -- HTML*/
+
+/* SIDEBAR */
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background: #dddddd;
+}
+
+.logo{
+    display: block;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+nav ul{
+    background: #dddddd;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li{
+    line-height: 50px;
+}
+
+nav ul li a{
+    position: relative;
+    color:#222831;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color:#f05454;
+}
+
+nav ul ul{
+    position: static;
+    display: none;
+}
+
+nav ul .port-show.show{
+    display: block;
+}
+
+nav ul .tutor-show.show1{
+    display: block;
+}
+
+nav ul ul li {
+    line-height: 42px;
+}
+
+nav ul ul li a{
+    font-size: 17px;
+    padding-left: 80px;
+}
+
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+nav ul li a span.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+/* END--SIDEBAR */
+
+/* CONTENT */
+.content{
+    margin-left: 250px;
+    padding: 5px;
+}
+
+.content h1{
+    margin-top: 30px;
+    font-size: 36px;
+    text-align: center;
+}
+.content-span{
+    font-size: 36px;
+}
+
+.content h2{
+    margin: 20px 70px;
+    font-size: 25px;
+}
+
+.content p{
+    margin: 15px 70px;
+    text-align: justify;
+}
+
+.content .header{
+    margin-top: 30px;
+    margin: 0px 70px;
+    margin-top: 60px;
+}
+
+.content h3{
+    margin: 0px 70px;
+}
+
+.content blockquote {
+    margin: 50px 0;
+}
+
+.content img {
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+}
+
+img.portrait {
+    display: block;
+    margin: 50px auto;
+    width: 30%;
+}
+
+.content ol {
+    list-style-type: decimal;
+}
+/* pignation */
+.pignation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.pignation ul{
+    position: relative;
+    background: #fff;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-sizing: 0px 5px 15px rgba(0,0,0,.2);
+}
+.pignation ul li{
+    list-style: none;
+    line-height: 50px;
+    margin: 0 5px;
+}
+.pignation ul li.pageNumber{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.pignation ul li a{
+    display: block;
+    text-decoration: none;
+    color: #222831;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.pignation ul li.pageNumber:hover a,
+.pignation ul li.pageNumber.active a
+{
+    background: #f05454;
+    color: #222831;
+}
+
+.pignation ul li:first-child{
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.pignation ul li:last-child{
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* END--CONTENT */
